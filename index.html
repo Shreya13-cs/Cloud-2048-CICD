@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2048 Cloud Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div>
+                <h1>2048</h1>
+                <p>Cloud Edition</p>
+            </div>
+
+            <div class="score-box">
+                <span>Score</span>
+                <strong id="score">0</strong>
+            </div>
+        </div>
+
+        <p class="instructions">
+            Use the arrow keys to move the tiles.
+            Combine tiles with the same number to reach 2048!
+        </p>
+
+        <button id="new-game">New Game</button>
+
+        <div id="game-board"></div>
+
+        <div id="game-message" class="hidden">
+            <h2 id="message-text"></h2>
+            <button id="try-again">Try Again</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
