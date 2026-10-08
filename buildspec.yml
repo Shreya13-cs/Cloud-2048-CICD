@@ -16,9 +16,8 @@ phases:
     commands:
       - echo Pushing Docker image to ECR...
       - docker push 056362973311.dkr.ecr.ap-southeast-2.amazonaws.com/cloud-2048:latest
-      - printf '[{"name":"cloud-2048","imageUri":"056362973311.dkr.ecr.ap-southeast-2.amazonaws.com/cloud-2048:latest"}]' > imagedefinitions.json
       - echo Build completed successfully.
 
-  artifacts:
-    files:
-      - imagedefinitions.json
+artifacts:
+  files:
+    - imagedefinitions.json
